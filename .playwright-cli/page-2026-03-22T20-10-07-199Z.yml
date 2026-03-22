@@ -1,0 +1,213 @@
+- generic [ref=e1]:
+  - generic [ref=e27]:
+    - navigation [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - link "Coolify" [ref=e33] [cursor=pointer]:
+            - /url: /
+          - link "v4.0.0-beta.468" [ref=e34] [cursor=pointer]:
+            - /url: https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.468
+        - button / [ref=e36]:
+          - img [ref=e37]
+          - generic [ref=e39]: /
+        - button "Preferences 8" [ref=e42] [cursor=pointer]:
+          - img "Preferences" [ref=e43]
+          - generic [ref=e45]: "8"
+      - combobox [ref=e48]:
+        - option "Switch team" [disabled]
+        - option "Root Team" [selected]
+      - list [ref=e49]:
+        - listitem [ref=e50]:
+          - list [ref=e51]:
+            - listitem [ref=e52]:
+              - link "Dashboard" [ref=e53] [cursor=pointer]:
+                - /url: /
+                - img [ref=e54]
+                - generic [ref=e56]: Dashboard
+            - listitem [ref=e57]:
+              - link "Projects" [ref=e58] [cursor=pointer]:
+                - /url: /projects
+                - img [ref=e59]
+                - generic [ref=e64]: Projects
+            - listitem [ref=e65]:
+              - link "Servers" [ref=e66] [cursor=pointer]:
+                - /url: /servers
+                - img [ref=e67]
+                - generic [ref=e72]: Servers
+            - listitem [ref=e73]:
+              - link "Sources" [ref=e74] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/sources
+                - img [ref=e75]
+                - generic [ref=e77]: Sources
+            - listitem [ref=e78]:
+              - link "Destinations" [ref=e79] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/destinations
+                - img [ref=e80]
+                - generic [ref=e82]: Destinations
+            - listitem [ref=e83]:
+              - link "S3 Storages" [ref=e84] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/storages
+                - img [ref=e85]
+                - generic [ref=e90]: S3 Storages
+            - listitem [ref=e91]:
+              - link "Shared Variables" [ref=e92] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/shared-variables
+                - img [ref=e93]
+                - generic [ref=e97]: Shared Variables
+            - listitem [ref=e98]:
+              - link "Notifications" [ref=e99] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/notifications/email
+                - img [ref=e100]
+                - generic [ref=e102]: Notifications
+            - listitem [ref=e103]:
+              - link "Keys & Tokens" [ref=e104] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/security/private-key
+                - img [ref=e105]
+                - generic [ref=e107]: Keys & Tokens
+            - listitem [ref=e108]:
+              - link "Tags" [ref=e109] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/tags
+                - img [ref=e110]
+                - generic [ref=e114]: Tags
+            - listitem [ref=e115]:
+              - link "Terminal" [ref=e116] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/terminal
+                - img [ref=e117]
+                - generic [ref=e120]: Terminal
+            - listitem [ref=e121]:
+              - link "Profile" [ref=e122] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/profile
+                - img [ref=e123]
+                - generic [ref=e128]: Profile
+            - listitem [ref=e129]:
+              - link "Teams" [ref=e130] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/team
+                - img [ref=e131]
+                - generic [ref=e139]: Teams
+            - listitem [ref=e140]:
+              - link "Settings" [ref=e141] [cursor=pointer]:
+                - /url: /settings
+                - img [ref=e142]
+                - generic [ref=e146]: Settings
+            - generic:
+              - listitem:
+                - generic "No upgrade available"
+            - listitem [ref=e148]:
+              - link "Sponsor us" [ref=e149] [cursor=pointer]:
+                - /url: https://coolify.io/sponsorships
+                - img [ref=e150]
+                - generic [ref=e154]: Sponsor us
+            - listitem [ref=e155]:
+              - generic "Send us feedback or get help!" [ref=e158] [cursor=pointer]:
+                - img [ref=e159]
+                - generic [ref=e161]: Feedback
+            - listitem [ref=e162]:
+              - button "Logout" [ref=e164]:
+                - img [ref=e165]
+                - generic [ref=e167]: Logout
+    - main [ref=e168]:
+      - generic [ref=e171]:
+        - heading "Create a new Service" [level=1] [ref=e172]
+        - generic [ref=e173]: You can deploy complex services easily with Docker Compose.
+        - generic [ref=e174]:
+          - generic [ref=e175]:
+            - heading "Docker Compose" [level=2] [ref=e176]
+            - button "Save" [ref=e177] [cursor=pointer]
+          - generic [ref=e178]:
+            - generic [ref=e179]: Docker Compose file
+            - code [ref=e465]:
+              - generic [ref=e466]:
+                - generic [ref=e468]:
+                  - generic [ref=e469]:
+                    - generic [ref=e471] [cursor=pointer]: 
+                    - generic [ref=e472]: "1"
+                  - generic [ref=e473]:
+                    - generic [ref=e474] [cursor=pointer]: 
+                    - generic [ref=e475]: "2"
+                  - generic [ref=e476]:
+                    - generic [ref=e477] [cursor=pointer]: 
+                    - generic [ref=e478]: "3"
+                  - generic [ref=e479]:
+                    - generic [ref=e480] [cursor=pointer]: 
+                    - generic [ref=e481]: "4"
+                  - generic [ref=e482]:
+                    - generic [ref=e483] [cursor=pointer]: 
+                    - generic [ref=e484]: "5"
+                  - generic [ref=e485]:
+                    - generic [ref=e486] [cursor=pointer]: 
+                    - generic [ref=e487]: "6"
+                  - generic [ref=e488]:
+                    - generic [ref=e489] [cursor=pointer]: 
+                    - generic [ref=e490]: "7"
+                  - generic [ref=e491]:
+                    - generic [ref=e492] [cursor=pointer]: 
+                    - generic [ref=e493]: "8"
+                  - generic [ref=e494]:
+                    - generic [ref=e495] [cursor=pointer]: 
+                    - generic [ref=e496]: "9"
+                  - generic [ref=e497]:
+                    - generic [ref=e498] [cursor=pointer]: 
+                    - generic [ref=e499]: "10"
+                  - generic [ref=e501]:
+                    - generic [ref=e502] [cursor=pointer]: 
+                    - generic [ref=e503]: "11"
+                  - generic [ref=e504]:
+                    - generic [ref=e505] [cursor=pointer]: 
+                    - generic [ref=e506]: "12"
+                  - generic [ref=e507]:
+                    - generic [ref=e508] [cursor=pointer]: 
+                    - generic [ref=e509]: "13"
+                  - generic [ref=e510]:
+                    - generic [ref=e511] [cursor=pointer]: 
+                    - generic [ref=e512]: "14"
+                  - generic [ref=e513]:
+                    - generic [ref=e514] [cursor=pointer]: 
+                    - generic [ref=e515]: "15"
+                  - generic [ref=e516]:
+                    - generic [ref=e517] [cursor=pointer]: 
+                    - generic [ref=e518]: "16"
+                  - generic [ref=e524]: "17"
+                  - generic [ref=e525]:
+                    - generic [ref=e526] [cursor=pointer]: 
+                    - generic [ref=e527]: "18"
+                  - generic [ref=e529]: "19"
+                - generic [ref=e789]:
+                  - generic [ref=e791]: "services:"
+                  - generic [ref=e793]: "postgres:"
+                  - generic [ref=e795]: "image: postgres:16-alpine"
+                  - generic [ref=e797]: "restart: unless-stopped"
+                  - generic [ref=e799]: "environment:"
+                  - generic [ref=e801]: "POSTGRES_DB: nest_admin"
+                  - generic [ref=e803]: "POSTGRES_USER: postgres"
+                  - generic [ref=e805]: "POSTGRES_PASSWORD: 5LxQ2jT9pM4vNc7K"
+                  - generic [ref=e807]: "healthcheck:"
+                  - generic [ref=e809]: "test: [\"CMD-SHELL\", \"pg_isready -U postgres -d"
+                  - generic [ref=e811]: nest_admin"]
+                  - generic [ref=e813]: "interval: 10s"
+                  - generic [ref=e815]: "timeout: 5s"
+                  - generic [ref=e817]: "retries: 10"
+                  - generic [ref=e819]: "start_period: 20s"
+                  - generic [ref=e821]: "volumes:"
+                  - generic [ref=e823]: "-"
+                  - generic [ref=e825]: postgres_data
+                  - generic [ref=e827]: :/var/lib/
+                  - generic [ref=e829]: postgresql/
+                  - generic [ref=e831]: data
+                  - generic [ref=e834]: "redis:"
+                  - generic [ref=e836]: "image:"
+                  - generic [ref=e838]: redis:7
+                - textbox "Editor content" [active] [ref=e840]: "services: postgres: image: postgres:16-alpine restart: unless-stopped environment: POSTGRES_DB: nest_admin POSTGRES_USER: postgres POSTGRES_PASSWORD: 5LxQ2jT9pM4vNc7K healthcheck: test: [\"CMD-SHELL\", \"pg_isready -U postgres -d"
+  - img
+  - list [ref=e841]:
+    - listitem [ref=e842]:
+      - generic [ref=e843]:
+        - generic [ref=e844]:
+          - generic [ref=e845]:
+            - img [ref=e846]
+            - paragraph [ref=e848]: Error
+          - generic [ref=e849]: "A colon cannot be used in an unquoted mapping value at line 4 (near \" restart: unless-stopped\")."
+        - img [ref=e851] [cursor=pointer]
+        - img [ref=e854] [cursor=pointer]
+  - generic [ref=e200]:
+    - alert
+    - alert

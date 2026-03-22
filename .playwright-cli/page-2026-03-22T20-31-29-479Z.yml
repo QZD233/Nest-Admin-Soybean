@@ -1,0 +1,236 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - link "Coolify" [ref=e8] [cursor=pointer]:
+            - /url: /
+          - link "v4.0.0-beta.468" [ref=e9] [cursor=pointer]:
+            - /url: https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.468
+        - button / [ref=e11]:
+          - img [ref=e12]
+          - generic [ref=e14]: /
+        - button "Preferences 8" [ref=e17] [cursor=pointer]:
+          - img "Preferences" [ref=e18]
+          - generic [ref=e20]: "8"
+      - combobox [ref=e23]:
+        - option "Switch team" [disabled]
+        - option "Root Team" [selected]
+      - list [ref=e24]:
+        - listitem [ref=e25]:
+          - list [ref=e26]:
+            - listitem [ref=e27]:
+              - link "Dashboard" [ref=e28] [cursor=pointer]:
+                - /url: /
+                - img [ref=e29]
+                - generic [ref=e31]: Dashboard
+            - listitem [ref=e32]:
+              - link "Projects" [ref=e33] [cursor=pointer]:
+                - /url: /projects
+                - img [ref=e34]
+                - generic [ref=e39]: Projects
+            - listitem [ref=e40]:
+              - link "Servers" [ref=e41] [cursor=pointer]:
+                - /url: /servers
+                - img [ref=e42]
+                - generic [ref=e47]: Servers
+            - listitem [ref=e48]:
+              - link "Sources" [ref=e49] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/sources
+                - img [ref=e50]
+                - generic [ref=e52]: Sources
+            - listitem [ref=e53]:
+              - link "Destinations" [ref=e54] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/destinations
+                - img [ref=e55]
+                - generic [ref=e57]: Destinations
+            - listitem [ref=e58]:
+              - link "S3 Storages" [ref=e59] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/storages
+                - img [ref=e60]
+                - generic [ref=e65]: S3 Storages
+            - listitem [ref=e66]:
+              - link "Shared Variables" [ref=e67] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/shared-variables
+                - img [ref=e68]
+                - generic [ref=e72]: Shared Variables
+            - listitem [ref=e73]:
+              - link "Notifications" [ref=e74] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/notifications/email
+                - img [ref=e75]
+                - generic [ref=e77]: Notifications
+            - listitem [ref=e78]:
+              - link "Keys & Tokens" [ref=e79] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/security/private-key
+                - img [ref=e80]
+                - generic [ref=e82]: Keys & Tokens
+            - listitem [ref=e83]:
+              - link "Tags" [ref=e84] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/tags
+                - img [ref=e85]
+                - generic [ref=e89]: Tags
+            - listitem [ref=e90]:
+              - link "Terminal" [ref=e91] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/terminal
+                - img [ref=e92]
+                - generic [ref=e95]: Terminal
+            - listitem [ref=e96]:
+              - link "Profile" [ref=e97] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/profile
+                - img [ref=e98]
+                - generic [ref=e103]: Profile
+            - listitem [ref=e104]:
+              - link "Teams" [ref=e105] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/team
+                - img [ref=e106]
+                - generic [ref=e114]: Teams
+            - listitem [ref=e115]:
+              - link "Settings" [ref=e116] [cursor=pointer]:
+                - /url: /settings
+                - img [ref=e117]
+                - generic [ref=e121]: Settings
+            - generic:
+              - listitem:
+                - generic "No upgrade available"
+            - listitem [ref=e123]:
+              - link "Sponsor us" [ref=e124] [cursor=pointer]:
+                - /url: https://coolify.io/sponsorships
+                - img [ref=e125]
+                - generic [ref=e129]: Sponsor us
+            - listitem [ref=e130]:
+              - generic "Send us feedback or get help!" [ref=e133] [cursor=pointer]:
+                - img [ref=e134]
+                - generic [ref=e136]: Feedback
+            - listitem [ref=e137]:
+              - button "Logout" [ref=e139]:
+                - img [ref=e140]
+                - generic [ref=e142]: Logout
+    - main [ref=e143]:
+      - generic [ref=e145]:
+        - generic [ref=e146]:
+          - heading "Configuration" [level=1] [ref=e147]
+          - navigation [ref=e148]:
+            - list [ref=e149]:
+              - listitem [ref=e150]:
+                - generic [ref=e151]:
+                  - link "My first project" [ref=e152] [cursor=pointer]:
+                    - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1
+                  - button [ref=e153]:
+                    - img [ref=e154]
+              - listitem [ref=e156]:
+                - generic [ref=e157]:
+                  - link "production" [ref=e158] [cursor=pointer]:
+                    - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915
+                  - button [ref=e159]:
+                    - img [ref=e160]
+              - listitem [ref=e162]:
+                - generic [ref=e163]:
+                  - link "service-iflb11ohjec71eqm572zvgcj (localhost)" [ref=e164] [cursor=pointer]:
+                    - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649
+                  - button [ref=e165]:
+                    - img [ref=e166]
+              - generic [ref=e170]: Exited
+          - generic [ref=e171]:
+            - navigation [ref=e172]:
+              - link "Configuration" [ref=e173] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649
+                - button "Configuration" [ref=e174]
+              - link "Logs" [ref=e175] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649/logs
+                - button "Logs" [ref=e176]
+              - link "Terminal" [ref=e177] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649/terminal
+                - button "Terminal" [ref=e178]
+              - button "Links" [ref=e180]:
+                - generic [ref=e181]: Links
+                - img [ref=e182]
+            - generic [ref=e184]:
+              - button "Advanced" [ref=e186]:
+                - generic [ref=e187]: Advanced
+                - img [ref=e188]
+              - button "Deploy" [ref=e190] [cursor=pointer]:
+                - img [ref=e191]
+                - text: Deploy
+        - generic [ref=e194]:
+          - generic [ref=e195]:
+            - link "Documentation" [ref=e196] [cursor=pointer]:
+              - /url: https://coolify.io/docs
+              - generic [ref=e197]: Documentation
+              - img [ref=e198]
+            - link "General" [ref=e200] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649
+              - generic [ref=e201]: General
+            - link "Environment Variables" [ref=e202] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649/environment-variables
+              - generic [ref=e203]: Environment Variables
+            - link "Persistent Storages" [ref=e204] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649/storages
+              - generic [ref=e205]: Persistent Storages
+            - link "Scheduled Tasks" [ref=e206] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649/scheduled-tasks
+              - generic [ref=e207]: Scheduled Tasks
+            - link "Webhooks" [ref=e208] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649/webhooks
+              - generic [ref=e209]: Webhooks
+            - link "Resource Operations" [ref=e210] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649/resource-operations
+              - generic [ref=e211]: Resource Operations
+            - link "Tags" [ref=e212] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649/tags
+              - generic [ref=e213]: Tags
+            - link "Danger Zone" [ref=e214] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649/danger
+              - generic [ref=e215]: Danger Zone
+          - generic [ref=e216]:
+            - generic [ref=e217]:
+              - generic [ref=e218]:
+                - generic [ref=e219]:
+                  - heading "Service Stack" [level=2] [ref=e220]
+                  - button "Save" [ref=e221] [cursor=pointer]
+                  - button "Edit Compose File" [ref=e223] [cursor=pointer]
+                - generic [ref=e224]: Configuration
+              - generic [ref=e225]:
+                - generic [ref=e226]:
+                  - generic [ref=e227]:
+                    - text: Service Name
+                    - generic [ref=e228]: "*"
+                  - textbox "My super WordPress site" [ref=e229]: service-iflb11ohjec71eqm572zvgcj
+                - generic [ref=e230]:
+                  - generic [ref=e231]: Description
+                  - textbox [ref=e232]
+              - generic [ref=e235]:
+                - generic [ref=e236]:
+                  - text: Connect To Predefined Network
+                  - img [ref=e239] [cursor=pointer]
+                - checkbox "Connect To Predefined Network" [ref=e241] [cursor=pointer]
+            - heading "Services" [level=3] [ref=e242]
+            - generic [ref=e243]:
+              - generic [ref=e245]:
+                - generic [ref=e246]:
+                  - generic [ref=e247]: Server (ghcr.io/linlingqin77/nest-admin-server:main-refactor-latest)
+                  - generic [ref=e248]: Exited
+                - link "Settings" [ref=e250] [cursor=pointer]:
+                  - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649/k510du0dgwuyun7s7vr5z0ug
+              - generic [ref=e252]:
+                - generic [ref=e253]:
+                  - generic [ref=e254]: Web (ghcr.io/linlingqin77/nest-admin-web:main-refactor-latest)
+                  - generic [ref=e255]: Exited
+                - link "Settings" [ref=e257] [cursor=pointer]:
+                  - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649/n983jtcf8jx8yzppssp85hfs
+              - generic [ref=e259]:
+                - generic [ref=e260]:
+                  - generic [ref=e261]: Postgres (postgres:16-alpine)
+                  - generic [ref=e262]: Exited
+                - generic [ref=e263]:
+                  - link "Backups" [ref=e264] [cursor=pointer]:
+                    - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649/vo5qh4h3oyitkgmsn307aqhg/backups
+                  - link "Settings" [ref=e265] [cursor=pointer]:
+                    - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649/vo5qh4h3oyitkgmsn307aqhg
+              - generic [ref=e267]:
+                - generic [ref=e268]:
+                  - generic [ref=e269]: Redis (redis:7-alpine)
+                  - generic [ref=e270]: Exited
+                - link "Settings" [ref=e272] [cursor=pointer]:
+                  - /url: http://127.0.0.1:18000/project/zlhoog31vqh991zdzfjp98w1/environment/lpib2sijn7d68ytxur049915/service/yrs4ttb9tkkynh74vvd5h649/io4xmmsvqsvvutjarlm28ei3
+  - img
+  - list

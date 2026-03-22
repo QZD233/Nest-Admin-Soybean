@@ -1,0 +1,38 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e6]:
+          - generic [ref=e37]:
+            - img [ref=e146]
+            - generic [ref=e40]: Server
+          - generic [ref=e43]:
+            - img [ref=e148]
+            - generic [ref=e46]: Connection
+          - generic [ref=e49]:
+            - generic [ref=e51]: "3"
+            - generic [ref=e52]: Complete
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - heading "Project Setup" [level=1] [ref=e150]
+            - generic [ref=e57]: Create your first project to organize applications, databases, and services.
+            - button "Create \"My First Project\"" [ref=e151] [cursor=pointer]
+          - generic [ref=e90]:
+            - heading "Technical Details" [level=3] [ref=e91]
+            - generic [ref=e92]:
+              - paragraph [ref=e93]:
+                - generic [ref=e94]: "Project Organization:"
+                - text: Group related resources (apps, databases, services) into logical projects.
+              - paragraph [ref=e95]:
+                - generic [ref=e96]: "Environments:"
+                - text: Each project includes a production environment by default. Add staging, development, or custom environments as needed.
+              - paragraph [ref=e97]:
+                - generic [ref=e98]: "Team Access:"
+                - text: Projects inherit team permissions and can be managed collaboratively.
+      - generic [ref=e99]:
+        - generic [ref=e100]:
+          - button "Skip Setup" [ref=e101]
+          - button "Restart" [ref=e102]
+        - button "Contact Support" [ref=e105]
+  - img
+  - list [ref=e131]

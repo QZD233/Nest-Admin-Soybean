@@ -1,0 +1,201 @@
+- generic [active] [ref=e836]:
+  - generic [ref=e837]:
+    - navigation [ref=e840]:
+      - generic [ref=e841]:
+        - generic [ref=e842]:
+          - link "Coolify" [ref=e843] [cursor=pointer]:
+            - /url: /
+          - link "v4.0.0-beta.468" [ref=e844] [cursor=pointer]:
+            - /url: https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.468
+        - button / [ref=e846]:
+          - img [ref=e847]
+          - generic [ref=e849]: /
+        - button "Preferences 8" [ref=e852] [cursor=pointer]:
+          - img "Preferences" [ref=e853]
+          - generic [ref=e855]: "8"
+      - combobox [ref=e858]:
+        - option "Switch team" [disabled]
+        - option "Root Team" [selected]
+      - list [ref=e859]:
+        - listitem [ref=e860]:
+          - list [ref=e861]:
+            - listitem [ref=e862]:
+              - link "Dashboard" [ref=e863] [cursor=pointer]:
+                - /url: /
+                - img [ref=e864]
+                - generic [ref=e866]: Dashboard
+            - listitem [ref=e867]:
+              - link "Projects" [ref=e868] [cursor=pointer]:
+                - /url: /projects
+                - img [ref=e869]
+                - generic [ref=e874]: Projects
+            - listitem [ref=e875]:
+              - link "Servers" [ref=e876] [cursor=pointer]:
+                - /url: /servers
+                - img [ref=e877]
+                - generic [ref=e882]: Servers
+            - listitem [ref=e883]:
+              - link "Sources" [ref=e884] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/sources
+                - img [ref=e885]
+                - generic [ref=e887]: Sources
+            - listitem [ref=e888]:
+              - link "Destinations" [ref=e889] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/destinations
+                - img [ref=e890]
+                - generic [ref=e892]: Destinations
+            - listitem [ref=e893]:
+              - link "S3 Storages" [ref=e894] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/storages
+                - img [ref=e895]
+                - generic [ref=e900]: S3 Storages
+            - listitem [ref=e901]:
+              - link "Shared Variables" [ref=e902] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/shared-variables
+                - img [ref=e903]
+                - generic [ref=e907]: Shared Variables
+            - listitem [ref=e908]:
+              - link "Notifications" [ref=e909] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/notifications/email
+                - img [ref=e910]
+                - generic [ref=e912]: Notifications
+            - listitem [ref=e913]:
+              - link "Keys & Tokens" [ref=e914] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/security/private-key
+                - img [ref=e915]
+                - generic [ref=e917]: Keys & Tokens
+            - listitem [ref=e918]:
+              - link "Tags" [ref=e919] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/tags
+                - img [ref=e920]
+                - generic [ref=e924]: Tags
+            - listitem [ref=e925]:
+              - link "Terminal" [ref=e926] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/terminal
+                - img [ref=e927]
+                - generic [ref=e930]: Terminal
+            - listitem [ref=e931]:
+              - link "Profile" [ref=e932] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/profile
+                - img [ref=e933]
+                - generic [ref=e938]: Profile
+            - listitem [ref=e939]:
+              - link "Teams" [ref=e940] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/team
+                - img [ref=e941]
+                - generic [ref=e949]: Teams
+            - listitem [ref=e950]:
+              - link "Settings" [ref=e951] [cursor=pointer]:
+                - /url: /settings
+                - img [ref=e952]
+                - generic [ref=e956]: Settings
+            - generic:
+              - listitem:
+                - generic "No upgrade available"
+            - listitem [ref=e958]:
+              - link "Sponsor us" [ref=e959] [cursor=pointer]:
+                - /url: https://coolify.io/sponsorships
+                - img [ref=e960]
+                - generic [ref=e964]: Sponsor us
+            - listitem [ref=e965]:
+              - generic "Send us feedback or get help!" [ref=e968] [cursor=pointer]:
+                - img [ref=e969]
+                - generic [ref=e971]: Feedback
+            - listitem [ref=e972]:
+              - button "Logout" [ref=e974]:
+                - img [ref=e975]
+                - generic [ref=e977]: Logout
+    - main [ref=e978]:
+      - generic [ref=e980]:
+        - generic [ref=e981]:
+          - heading "Settings" [level=1] [ref=e982]
+          - generic [ref=e983]: Instance wide settings for Coolify.
+          - navigation [ref=e985]:
+            - link "Configuration" [ref=e986] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/settings
+            - link "Backup" [ref=e987] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/settings/backup
+            - link "Transactional Email" [ref=e988] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/settings/email
+            - link "OAuth" [ref=e989] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/settings/oauth
+            - link "Scheduled Jobs" [ref=e990] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/settings/scheduled-jobs
+        - generic [ref=e991]:
+          - generic [ref=e992]:
+            - link "General" [ref=e993] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/settings
+              - generic [ref=e994]: General
+            - link "Advanced" [ref=e995] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/settings/advanced
+              - generic [ref=e996]: Advanced
+            - link "Updates" [ref=e997] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/settings/updates
+              - generic [ref=e998]: Updates
+          - generic [ref=e999]:
+            - generic [ref=e1000]:
+              - heading "Advanced" [level=2] [ref=e1001]
+              - button "Save" [ref=e1002] [cursor=pointer]
+            - generic [ref=e1003]: Advanced settings for your Coolify instance.
+            - generic [ref=e1004]:
+              - generic [ref=e1007]:
+                - generic [ref=e1008]:
+                  - text: Registration Allowed
+                  - img [ref=e1011] [cursor=pointer]
+                - checkbox "Registration Allowed" [ref=e1013] [cursor=pointer]
+              - generic [ref=e1016]:
+                - generic [ref=e1017]:
+                  - text: Do Not Track
+                  - img [ref=e1020] [cursor=pointer]
+                - checkbox "Do Not Track" [ref=e1022] [cursor=pointer]
+              - heading "DNS Settings" [level=4] [ref=e1023]
+              - generic [ref=e1026]:
+                - generic [ref=e1027]:
+                  - text: DNS Validation
+                  - img [ref=e1030] [cursor=pointer]
+                - checkbox "DNS Validation" [checked] [ref=e1032] [cursor=pointer]
+              - generic [ref=e1033]:
+                - generic [ref=e1034]:
+                  - text: Custom DNS Servers
+                  - img [ref=e1037] [cursor=pointer]
+                - textbox "1.1.1.1,8.8.8.8" [ref=e1039]: 1.1.1.1
+              - heading "API Settings" [level=4] [ref=e1040]
+              - generic [ref=e1043]:
+                - generic [ref=e1044]:
+                  - text: API Access
+                  - img [ref=e1047] [cursor=pointer]
+                - checkbox "API Access" [ref=e1049] [cursor=pointer]
+              - generic [ref=e1050]:
+                - generic [ref=e1051]:
+                  - text: Allowed IPs for API Access
+                  - img [ref=e1054] [cursor=pointer]
+                - textbox "192.168.1.100,10.0.0.0/8,203.0.113.0/24" [ref=e1056]
+              - generic [ref=e1058]:
+                - img [ref=e1060]
+                - generic [ref=e1062]:
+                  - generic [ref=e1063]: Warning
+                  - generic [ref=e1064]: Using 0.0.0.0 (or empty) allows API access from anywhere. This is not recommended for production environments!
+              - heading "UI Settings" [level=4] [ref=e1065]
+              - generic [ref=e1068]:
+                - generic [ref=e1069]:
+                  - text: SPA Navigation
+                  - img [ref=e1072] [cursor=pointer]
+                - checkbox "SPA Navigation" [checked] [ref=e1074] [cursor=pointer]
+              - heading "Confirmation Settings" [level=4] [ref=e1075]
+              - generic [ref=e1078]:
+                - generic [ref=e1079]:
+                  - text: Show Sponsorship Popup
+                  - img [ref=e1082] [cursor=pointer]
+                - checkbox "Show Sponsorship Popup" [checked] [ref=e1084] [cursor=pointer]
+            - generic [ref=e1085]:
+              - generic [ref=e1086]:
+                - generic [ref=e1087]:
+                  - text: Disable Two Step Confirmation
+                  - img [ref=e1090] [cursor=pointer]
+                - button "Disable" [ref=e1093] [cursor=pointer]
+              - generic [ref=e1095]:
+                - img [ref=e1097]
+                - generic [ref=e1099]:
+                  - generic [ref=e1100]: Warning!
+                  - generic [ref=e1101]: Disabling two step confirmation reduces security (as anyone can easily delete anything) and increases the risk of accidental actions. This is not recommended for production servers.
+  - list

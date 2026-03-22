@@ -1,0 +1,103 @@
+- generic [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e6]:
+          - generic [ref=e37]:
+            - generic [ref=e39]: "1"
+            - generic [ref=e40]: Server
+          - generic [ref=e43]:
+            - generic [ref=e45]: "2"
+            - generic [ref=e46]: Connection
+          - generic [ref=e49]:
+            - generic [ref=e51]: "3"
+            - generic [ref=e52]: Complete
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - heading "Choose Server Type" [level=1] [ref=e56]
+            - generic [ref=e57]: Select where to deploy your applications and databases. You can add more servers later.
+            - generic [ref=e58]:
+              - generic [ref=e59]:
+                - button "Quick Start This Machine Deploy on the server running Coolify. Best for testing and single-server setups." [active] [ref=e60] [cursor=pointer]:
+                  - generic [ref=e61]:
+                    - generic [ref=e62]:
+                      - img [ref=e63]
+                      - generic [ref=e65]: Quick Start
+                    - generic [ref=e66]:
+                      - heading "This Machine" [level=3] [ref=e67]
+                      - paragraph [ref=e68]: Deploy on the server running Coolify. Best for testing and single-server setups.
+                - button "Recommended Remote Server Connect via SSH to any server—cloud VPS, bare metal, or home infrastructure." [ref=e69] [cursor=pointer]:
+                  - generic [ref=e70]:
+                    - generic [ref=e71]:
+                      - img [ref=e72]
+                      - generic [ref=e74]: Recommended
+                    - generic [ref=e75]:
+                      - heading "Remote Server" [level=3] [ref=e76]
+                      - paragraph [ref=e77]: Connect via SSH to any server—cloud VPS, bare metal, or home infrastructure.
+                - generic [ref=e81] [cursor=pointer]:
+                  - generic [ref=e82]:
+                    - img [ref=e83]
+                    - generic [ref=e86]: Recommended
+                  - generic [ref=e87]:
+                    - heading "Hetzner Cloud" [level=3] [ref=e88]
+                    - paragraph [ref=e89]: Deploy servers directly from your Hetzner Cloud account.
+              - generic [ref=e106]:
+                - heading "Server is not reachable" [level=2] [ref=e107]
+                - paragraph [ref=e108]: Please check the connection details below and correct them if they are incorrect.
+                - generic [ref=e109]:
+                  - generic [ref=e110]:
+                    - generic [ref=e111]: Port
+                    - textbox "Default is 22" [ref=e112]: "22"
+                  - generic [ref=e113]:
+                    - generic [ref=e114]:
+                      - generic [ref=e115]: User
+                      - textbox "Default is root" [ref=e116]: root
+                    - paragraph [ref=e117]:
+                      - text: "Non-root user is experimental:"
+                      - link "docs" [ref=e118] [cursor=pointer]:
+                        - /url: https://coolify.io/docs/knowledge-base/server/non-root-user
+                - generic [ref=e119]:
+                  - paragraph [ref=e120]: "If the connection details are correct, please ensure:"
+                  - list [ref=e121]:
+                    - listitem [ref=e122]:
+                      - text: The correct public key is in your
+                      - code [ref=e123]: ~/.ssh/authorized_keys
+                      - text: file for the specified user
+                    - listitem [ref=e124]: Or skip the boarding process and manually add a new private key to Coolify and the server
+                - paragraph [ref=e125]:
+                  - text: For more help, check this
+                  - link "documentation" [ref=e126] [cursor=pointer]:
+                    - /url: https://coolify.io/docs/knowledge-base/server/openssh
+                  - text: .
+                - generic [ref=e127]:
+                  - generic [ref=e128]: Current Public Key
+                  - textbox [ref=e129]: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMPhtnPIzNQ9iy0xvVmaQ0hL+x/ysjw2TlQb9Wmw92BV
+                - button "Check Again" [ref=e130] [cursor=pointer]
+          - generic [ref=e90]:
+            - heading "Technical Details" [level=3] [ref=e91]
+            - generic [ref=e92]:
+              - paragraph [ref=e93]:
+                - generic [ref=e94]: Servers
+                - text: host your applications, databases, and services (collectively called resources). All CPU-intensive operations run on the target server.
+              - paragraph [ref=e95]:
+                - generic [ref=e96]: "Localhost:"
+                - text: The machine running Coolify. Not recommended for production workloads due to resource contention.
+              - paragraph [ref=e97]:
+                - generic [ref=e98]: "Remote Server:"
+                - text: Any SSH-accessible server—cloud providers (AWS, Hetzner, DigitalOcean), bare metal, or self-hosted infrastructure.
+      - generic [ref=e99]:
+        - generic [ref=e100]:
+          - button "Skip Setup" [ref=e101]
+          - button "Restart" [ref=e102]
+        - button "Contact Support" [ref=e105]
+  - img
+  - list [ref=e131]:
+    - listitem [ref=e132]:
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - img [ref=e136]
+            - paragraph [ref=e138]: Error
+          - generic [ref=e139]: "root@host.docker.internal: Permission denied (publickey)."
+        - img [ref=e141] [cursor=pointer]
+        - img [ref=e144] [cursor=pointer]

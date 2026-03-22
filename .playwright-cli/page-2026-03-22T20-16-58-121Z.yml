@@ -1,0 +1,133 @@
+- generic [active] [ref=e674]:
+  - generic [ref=e675]:
+    - navigation [ref=e678]:
+      - generic [ref=e679]:
+        - generic [ref=e680]:
+          - link "Coolify" [ref=e681] [cursor=pointer]:
+            - /url: /
+          - link "v4.0.0-beta.468" [ref=e682] [cursor=pointer]:
+            - /url: https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.468
+        - button / [ref=e684]:
+          - img [ref=e685]
+          - generic [ref=e687]: /
+        - button "Preferences 8" [ref=e690] [cursor=pointer]:
+          - img "Preferences" [ref=e691]
+          - generic [ref=e693]: "8"
+      - combobox [ref=e696]:
+        - option "Switch team" [disabled]
+        - option "Root Team" [selected]
+      - list [ref=e697]:
+        - listitem [ref=e698]:
+          - list [ref=e699]:
+            - listitem [ref=e700]:
+              - link "Dashboard" [ref=e701] [cursor=pointer]:
+                - /url: /
+                - img [ref=e702]
+                - generic [ref=e704]: Dashboard
+            - listitem [ref=e705]:
+              - link "Projects" [ref=e706] [cursor=pointer]:
+                - /url: /projects
+                - img [ref=e707]
+                - generic [ref=e712]: Projects
+            - listitem [ref=e713]:
+              - link "Servers" [ref=e714] [cursor=pointer]:
+                - /url: /servers
+                - img [ref=e715]
+                - generic [ref=e720]: Servers
+            - listitem [ref=e721]:
+              - link "Sources" [ref=e722] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/sources
+                - img [ref=e723]
+                - generic [ref=e725]: Sources
+            - listitem [ref=e726]:
+              - link "Destinations" [ref=e727] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/destinations
+                - img [ref=e728]
+                - generic [ref=e730]: Destinations
+            - listitem [ref=e731]:
+              - link "S3 Storages" [ref=e732] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/storages
+                - img [ref=e733]
+                - generic [ref=e738]: S3 Storages
+            - listitem [ref=e739]:
+              - link "Shared Variables" [ref=e740] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/shared-variables
+                - img [ref=e741]
+                - generic [ref=e745]: Shared Variables
+            - listitem [ref=e746]:
+              - link "Notifications" [ref=e747] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/notifications/email
+                - img [ref=e748]
+                - generic [ref=e750]: Notifications
+            - listitem [ref=e751]:
+              - link "Keys & Tokens" [ref=e752] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/security/private-key
+                - img [ref=e753]
+                - generic [ref=e755]: Keys & Tokens
+            - listitem [ref=e756]:
+              - link "Tags" [ref=e757] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/tags
+                - img [ref=e758]
+                - generic [ref=e762]: Tags
+            - listitem [ref=e763]:
+              - link "Terminal" [ref=e764] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/terminal
+                - img [ref=e765]
+                - generic [ref=e768]: Terminal
+            - listitem [ref=e769]:
+              - link "Profile" [ref=e770] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/profile
+                - img [ref=e771]
+                - generic [ref=e776]: Profile
+            - listitem [ref=e777]:
+              - link "Teams" [ref=e778] [cursor=pointer]:
+                - /url: http://127.0.0.1:18000/team
+                - img [ref=e779]
+                - generic [ref=e787]: Teams
+            - listitem [ref=e788]:
+              - link "Settings" [ref=e789] [cursor=pointer]:
+                - /url: /settings
+                - img [ref=e790]
+                - generic [ref=e794]: Settings
+            - generic:
+              - listitem:
+                - generic "No upgrade available"
+            - listitem [ref=e796]:
+              - link "Sponsor us" [ref=e797] [cursor=pointer]:
+                - /url: https://coolify.io/sponsorships
+                - img [ref=e798]
+                - generic [ref=e802]: Sponsor us
+            - listitem [ref=e803]:
+              - generic "Send us feedback or get help!" [ref=e806] [cursor=pointer]:
+                - img [ref=e807]
+                - generic [ref=e809]: Feedback
+            - listitem [ref=e810]:
+              - button "Logout" [ref=e812]:
+                - img [ref=e813]
+                - generic [ref=e815]: Logout
+    - main [ref=e816]:
+      - generic [ref=e818]:
+        - generic [ref=e819]:
+          - heading "Security" [level=1] [ref=e820]
+          - generic [ref=e821]: Security related settings.
+          - navigation [ref=e823]:
+            - link "Private Keys" [ref=e824] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/security/private-key
+              - button "Private Keys" [ref=e825]
+            - link "Cloud Tokens" [ref=e826] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/security/cloud-tokens
+              - button "Cloud Tokens" [ref=e827]
+            - link "Cloud-Init Scripts" [ref=e828] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/security/cloud-init-scripts
+              - button "Cloud-Init Scripts" [ref=e829]
+            - link "API Tokens" [ref=e830] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/security/api-tokens
+              - button "API Tokens" [ref=e831]
+        - generic [ref=e832]:
+          - heading "API Tokens" [level=2] [ref=e833]
+          - generic [ref=e834]:
+            - text: API is disabled. If you want to use the API, please enable it in the
+            - link "Settings" [ref=e835] [cursor=pointer]:
+              - /url: http://127.0.0.1:18000/settings/advanced
+            - text: menu.
+  - list

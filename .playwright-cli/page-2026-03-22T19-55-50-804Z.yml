@@ -1,0 +1,41 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e37]:
+          - img [ref=e146]
+          - generic [ref=e40]: Server
+        - generic [ref=e43]:
+          - img [ref=e148]
+          - generic [ref=e46]: Connection
+        - generic [ref=e49]:
+          - generic [ref=e51]: "3"
+          - generic [ref=e52]: Complete
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - img [ref=e152]
+          - heading "Setup Complete!" [level=1] [ref=e154]
+          - paragraph [ref=e155]: Your server is connected and ready. Start deploying your first resource.
+        - generic [ref=e156]:
+          - heading "What's Configured" [level=2] [ref=e157]
+          - generic [ref=e158]:
+            - generic [ref=e159]:
+              - img [ref=e161]
+              - generic [ref=e163]:
+                - generic [ref=e164]: "Server: localhost"
+                - generic [ref=e165]: host.docker.internal
+            - generic [ref=e166]:
+              - img [ref=e168]
+              - generic [ref=e170]:
+                - generic [ref=e171]: "Project: My first project"
+                - generic [ref=e172]: Production environment ready
+            - generic [ref=e173]:
+              - img [ref=e175]
+              - generic [ref=e177]:
+                - generic [ref=e178]: Docker Engine
+                - generic [ref=e179]: Installed and running
+        - generic [ref=e180]:
+          - button "Deploy Your First Resource" [ref=e181] [cursor=pointer]
+          - button "Go to Dashboard" [ref=e182]
+  - img
+  - list [ref=e131]

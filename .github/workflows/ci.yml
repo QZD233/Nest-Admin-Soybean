@@ -44,6 +44,9 @@ jobs:
       - name: Generate Prisma Client
         run: pnpm --filter @nest-admin/server prisma:generate
 
+      - name: Build shared types
+        run: pnpm --filter @nest-admin/types build
+
       - name: Build server
         run: pnpm --filter @nest-admin/server build
 
