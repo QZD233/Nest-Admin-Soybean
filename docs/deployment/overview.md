@@ -143,7 +143,7 @@ git pull origin main
 
 #### 后端配置
 
-编辑 `server/.env.production`：
+编辑 `apps/server/.env.production`：
 
 ```ini
 # 环境
@@ -155,7 +155,7 @@ NODE_ENV=production
 
 #### 前端配置
 
-编辑 `admin-naive-ui/.env.production`：
+若使用 Docker / Coolify，同步参考根目录 `.env.coolify.example`；如果需要单独构建前端，再编辑 `apps/web/.env.coolify`。
 
 ```ini
 # API 地址
@@ -172,18 +172,16 @@ VITE_ENABLE_ENCRYPT=true
 createdb nest-admin-soybean
 
 # 运行迁移
-cd server
-pnpm prisma:migrate
+pnpm --filter @nest-admin/server prisma:migrate
 
 # 初始化数据
-pnpm prisma:seed
+pnpm --filter @nest-admin/server prisma:seed
 ```
 
 ### 4. 生成密钥
 
 ```bash
-cd server
-pnpm generate:keys
+pnpm --filter @nest-admin/server generate:keys
 ```
 
 ## 构建项目
@@ -191,22 +189,18 @@ pnpm generate:keys
 ### 后端构建
 
 ```bash
-cd server
-pnpm install --prod
-pnpm build
+pnpm --filter @nest-admin/server build
 ```
 
-生成的文件位于 `server/dist/`
+生成的文件位于 `apps/server/dist/`
 
 ### 前端构建
 
 ```bash
-cd admin-naive-ui
-pnpm install
-pnpm build
+pnpm --filter @nest-admin/web build:coolify
 ```
 
-生成的文件位于 `admin-naive-ui/dist/`
+生成的文件位于 `apps/web/dist/`
 
 ## 快速部署脚本
 

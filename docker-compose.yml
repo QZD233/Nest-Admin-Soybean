@@ -1,0 +1,104 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-nest_admin}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-nest_admin}"
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD:-redis}
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli -a ${REDIS_PASSWORD:-redis} ping | grep PONG"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    volumes:
+      - redis_data:/data
+
+  server:
+    build:
+      context: .
+      dockerfile: apps/server/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      APP_PORT: 8080
+      APP_PREFIX: /api
+      DATABASE_URL: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-nest_admin}?schema=public&sslmode=disable
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USERNAME: ${POSTGRES_USER:-postgres}
+      DB_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      DB_DATABASE: ${POSTGRES_DB:-nest_admin}
+      DB_SCHEMA: public
+      DB_SSL: "false"
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: ${REDIS_PASSWORD:-redis}
+      REDIS_DB: ${REDIS_DB:-0}
+      JWT_SECRET: ${JWT_SECRET:-change-me-in-production}
+      FILE_IS_LOCAL: "true"
+      FILE_UPLOAD_LOCATION: /data/uploads
+      FILE_DOMAIN: ${FILE_DOMAIN:-http://localhost:3000}
+      FILE_SERVE_ROOT: /profile
+      LOG_TO_FILE: "false"
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      CLIENT_DEFAULT_ID: ${CLIENT_DEFAULT_ID:-pc}
+      CLIENT_DEFAULT_GRANT_TYPE: ${CLIENT_DEFAULT_GRANT_TYPE:-password}
+      CRYPTO_ENABLED: ${CRYPTO_ENABLED:-false}
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "node -e \"const http = require('http'); http.get('http://127.0.0.1:8080/api/v1/health/ready', (res) => process.exit(res.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1));\""
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+    volumes:
+      - server_uploads:/data/uploads
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      server:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1/ >/dev/null 2>&1 || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 20s
+    ports:
+      - "${WEB_PORT:-3000}:80"
+
+volumes:
+  postgres_data:
+  redis_data:
+  server_uploads:

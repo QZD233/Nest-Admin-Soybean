@@ -111,6 +111,7 @@ export default defineConfig({
           text: 'CI/CD',
           items: [
             { text: 'GitHub Actions', link: '/deployment/github-actions' },
+            { text: 'Coolify 服务器', link: '/deployment/coolify-server' },
             { text: 'Docker部署', link: '/deployment/docker' },
             { text: 'CI/CD最佳实践', link: '/deployment/cicd' },
           ]

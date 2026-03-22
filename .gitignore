@@ -103,7 +103,6 @@ pm2.log
 ecosystem.config.cjs.local
 
 # Docker
-.dockerignore
 docker-compose.override.yml
 
 # Misc

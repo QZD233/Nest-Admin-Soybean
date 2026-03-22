@@ -60,7 +60,7 @@ features:
     
   - icon: 📦
     title: 自动化部署
-    details: GitHub Actions + PM2 + Docker，一键部署到生产环境
+    details: GitHub Actions + GHCR + Coolify，校验与部署链路一体化
     link: /deployment/overview
     
   - icon: 🛠️
@@ -136,4 +136,3 @@ pnpm dev
 ## 开源协议
 
 本项目基于 [MIT License](https://github.com/linlingqin77/Nest-Admin-Soybean/blob/main/LICENSE) 开源协议。
-
